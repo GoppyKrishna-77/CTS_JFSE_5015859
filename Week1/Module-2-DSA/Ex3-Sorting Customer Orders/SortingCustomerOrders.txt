@@ -1,0 +1,49 @@
+Exercise 3: Sorting Customer Orders
+
+1.	Understand Sorting Algorithms:
+o	Explain different sorting algorithms (Bubble Sort, Insertion Sort, Quick Sort, Merge Sort).
+
+Bubble Sort:
+
+    Description: Bubble Sort repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. This process repeats until the list is sorted.
+
+    Efficiency: Simple but inefficient for large datasets with a time complexity of O(n²).
+
+Insertion Sort:
+
+    Description: Insertion Sort builds the final sorted list one item at a time, picking the next item and inserting it into the correct position among the previously sorted items.
+
+    Efficiency: More efficient than Bubble Sort for small datasets or nearly sorted data, with a time complexity of O(n²) in the worst case but O(n) in the best case.
+
+Quick Sort:
+
+    Description: Quick Sort uses a divide-and-conquer approach by selecting a 'pivot' element and partitioning the array into elements less than and greater than the pivot. The process is then recursively applied to the sub-arrays.
+
+    Efficiency: Highly efficient with an average-case time complexity of O(n log n). However, the worst-case scenario, usually avoidable with good pivot selection, is O(n²).
+
+Merge Sort:
+    
+    Description: Merge Sort also follows a divide-and-conquer strategy. It splits the array into halves, sorts each half, and then merges the sorted halves.
+    
+    Efficiency: Guarantees a time complexity of O(n log n) in all cases, but requires additional space for the temporary arrays used during merging.
+
+    
+
+4.	Analysis:
+o	Compare the performance (time complexity) of Bubble Sort and Quick Sort.
+
+Bubble Sort:
+
+    Time Complexity: O(n²) in the worst and average cases, as each element is compared with all others in a nested loop.
+
+    Space Complexity: O(1) as it requires only a single extra space for swapping elements.
+
+Quick Sort:
+
+    Time Complexity: O(n log n) on average, making it much faster than Bubble Sort. The worst-case is O(n²), but this can be mitigated with good pivot selection or using a randomized version.
+    
+    Space Complexity: O(log n) due to the recursive call stack.
+
+o	Discuss why Quick Sort is generally preferred over Bubble Sort.
+
+Quick Sort is generally preferred over Bubble Sort because it is significantly faster for large datasets. While Bubble Sort's O(n²) time complexity makes it impractical for large lists, Quick Sort's average-case O(n log n) complexity provides much better performance, making it suitable for real-world applications like sorting customer orders on an E-commerce platform.

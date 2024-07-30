@@ -1,0 +1,48 @@
+Exercise 4: Employee Management System
+
+1.	Understand Array Representation:
+o	Explain how arrays are represented in memory and their advantages.
+
+Arrays are stored in contiguous memory locations, which means elements are placed sequentially in memory. This allows for efficient access using index values, as each element can be accessed by calculating the memory address based on the starting address and the index.
+
+Advantages:
+
+    Fast Access: Accessing an element by index is very fast, typically O(1), because the memory address can be directly calculated.
+
+    Cache-Friendly: Contiguous storage makes arrays cache-friendly, as accessing elements sequentially can leverage the CPU cache effectively.
+
+    Simple to Implement: Arrays are simple data structures that are easy to implement and use.
+
+
+
+4.	Analysis:
+o	Analyze the time complexity of each operation (add, search, traverse, delete).
+
+Add Operation:
+    If adding to the end of the array and there is space, it's O(1).
+    If adding at a specific index or if the array needs resizing, it can be O(n) due to shifting elements or reallocating memory.
+
+Search Operation:
+    Linear search is O(n) as it may need to check each element.
+
+Traverse Operation:
+    Traversing the array is O(n) since it requires visiting each element.
+
+Delete Operation:
+    If deleting from the end, it's O(1).
+    If deleting from a specific index, it's O(n) because of the need to shift elements.
+
+o	Discuss the limitations of arrays and when to use them.
+
+Limitations of Arrays:
+
+    Fixed Size: Once declared, the size of an array is fixed, which can lead to wasted memory if the array is not fully utilized or the need for costly resizing operations if more space is needed.
+
+    Inefficient Insertions and Deletions: Inserting or deleting elements in the middle of the array requires shifting elements, which is time-consuming (O(n)).
+
+    Lack of Flexibility: Arrays do not provide built-in support for dynamic resizing or complex data manipulation operations.
+
+
+When to Use Arrays:
+    Arrays are best used when the size of the dataset is known in advance and does not change frequently
+    They are also suitable when quick access to elements by index is needed and the data structure does not require frequent insertions or deletions.

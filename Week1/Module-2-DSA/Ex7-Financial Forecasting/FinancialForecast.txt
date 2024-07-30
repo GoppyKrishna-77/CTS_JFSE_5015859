@@ -1,0 +1,23 @@
+Exercise 7: Financial Forecasting
+
+1.	Understand Recursive Algorithms:
+o	Explain the concept of recursion and how it can simplify certain problems.
+
+A technique where a function calls itself to solve smaller instances of a problem, eventually leading to a base case that stops the recursion.
+
+It Simplifies complex problems by breaking them down into more manageable sub-problems, often leading to more elegant and concise solutions.
+
+
+
+4.	Analysis:
+o	Discuss the time complexity of your recursive algorithm.
+
+The time complexity of the recursive function calculateFutureValue is O(n), where n is the number of periods (years). This is because the function makes a recursive call for each period until the base case is reached.
+
+o	Explain how to optimize the recursive solution to avoid excessive computation.
+
+For scenarios involving large time periods or complex calculations, recursion can lead to a stack overflow or inefficient computation. To optimize:
+
+    Memoization: Store previously computed results to avoid redundant calculations.
+
+    Iterative Approach: Replace recursion with an iterative approach to save on stack space and reduce overhead.

@@ -1,0 +1,29 @@
+Exercise 2: E-commerce Platform Search Function
+
+1. Understand Asymptotic Notation
+o	Explain Big O notation and how it helps in analyzing algorithms.
+
+Big O notation is a way to describe the efficiency of an algorithm in terms of the size of its input, denoted as 'n.' It helps in understanding how the algorithm's runtime or space requirements grow as the input size increases.
+
+o	Describe the best, average, and worst-case scenarios for search operations.
+
+Best Case: The search finds the target element in the first comparison. For linear search, this is O(1); for binary search, it's also O(1) if the target is at the middle.
+
+Average Case: This considers a scenario where the search operation might not always hit the best or worst cases. For linear search, it generally involves checking half the elements, so it's O(n/2), simplified to O(n). For binary search, it's O(log n).
+
+Worst Case: The search has to go through all elements (in linear search) or keep dividing the search space (in binary search) until it either finds the element or concludes it's not present. Linear search's worst case is O(n), while binary search's is O(log n).
+
+
+
+4. Analysis
+
+o	Compare the time complexity of linear and binary search algorithms.
+
+Linear Search - Time Complexity: O(n), where 'n' is the number of products. It goes through each element one by one until it finds the target or reaches the end.
+
+Binary Search - Time Complexity: O(log n). This is more efficient as it halves the search space with each step, but it requires the array to be sorted.
+
+o	Discuss which algorithm is more suitable for your platform and why.
+
+Binary search is generally more suitable for an E-commerce platform, especially when dealing with a large dataset of products. The reason is its logarithmic time complexity, which allows for faster search times compared to the linear time complexity of linear search. However, binary search requires the data to be sorted, so if the product list changes frequently, you may need efficient sorting algorithms to maintain the sorted order. In summary, if the product data changes less frequently and the array can be kept sorted, binary search is the better option due to its efficiency.
+
