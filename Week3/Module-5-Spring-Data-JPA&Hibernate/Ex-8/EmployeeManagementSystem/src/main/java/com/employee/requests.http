@@ -1,0 +1,152 @@
+### Create a new Department
+POST http://localhost:8080/departments
+Content-Type: application/json
+
+{
+  "name": "Engineering"
+}
+
+### Get all Departments
+GET http://localhost:8080/departments
+
+### Get a Department by ID
+GET http://localhost:8080/departments/1
+
+### Get a Department by Name
+GET http://localhost:8080/departments/name?name=Engineering
+
+### Update a Department
+PUT http://localhost:8080/departments/1
+Content-Type: application/json
+
+{
+  "name": "Research & Development"
+}
+
+### Create a new Employee
+POST http://localhost:8080/employees
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "john.doe@example.com",
+  "department": {
+    "id": 1
+  }
+}
+
+###
+
+POST http://localhost:8080/employees
+Content-Type: application/json
+
+{
+  "name": "John Wick",
+  "email": "john.wick@example.com",
+  "department": {
+    "id": 1
+  }
+}
+
+###
+
+POST http://localhost:8080/employees
+Content-Type: application/json
+
+{
+  "name": "Harry Will",
+  "email": "harry.will@example.com",
+  "department": {
+    "id": 1
+  }
+}
+
+###
+
+POST http://localhost:8080/employees
+Content-Type: application/json
+
+{
+  "name": "Jane Robert",
+  "email": "jane.robert@example.com",
+  "department": {
+    "id": 1
+  }
+}
+
+###
+
+POST http://localhost:8080/employees
+Content-Type: application/json
+
+{
+  "name": "Peter Parker",
+  "email": "peter.parker@example.com",
+  "department": {
+    "id": 1
+  }
+}
+
+###
+
+POST http://localhost:8080/employees
+Content-Type: application/json
+
+{
+  "name": "Steve Rogers",
+  "email": "steve.rogers@example.com",
+  "department": {
+    "id": 1
+  }
+}
+
+### Get all Employees
+GET http://localhost:8080/employees
+
+### Get all Employees Name and Email
+GET http://localhost:8080/employees/names-emails
+
+### Get all Employees Name and Department Name
+GET http://localhost:8080/employees/names-departments
+
+### Get first page of employees, 3 per page, sorted by name ascending
+GET http://localhost:8080/employees/paged?size=3&sortBy=name
+
+### Get second page of employees, 3 per page, sorted by name ascending
+GET http://localhost:8080/employees/paged?page=1&size=3&sortBy=name
+
+### Get first page of employees, 5 per page, sorted by email descending
+GET http://localhost:8080/employees/paged-and-sorted?page=0&size=5&sortBy=email&sortDir=desc
+
+### Get second page of employees, 5 per page, sorted by email descending
+GET http://localhost:8080/employees/paged-and-sorted?page=1&size=5&sortBy=email&sortDir=desc
+
+### Get an Employee by ID
+GET http://localhost:8080/employees/1
+
+### Get Employees by Name
+GET http://localhost:8080/employees/name?name=john%20Doe
+
+### Get Employees by Department Name
+GET http://localhost:8080/employees/department?departmentName=engineering
+
+### Get Employee by Email Id
+GET http://localhost:8080/employees/email?email=john.doe@example.com
+
+### Update an Employee
+PUT http://localhost:8080/employees/1
+Content-Type: application/json
+
+{
+  "name": "Jane Doe",
+  "email": "jane.doe@example.com",
+  "department": {
+    "id": 1
+  }
+}
+
+### Delete an Employee
+DELETE http://localhost:8080/employees/1
+
+### Delete a Department
+DELETE http://localhost:8080/departments/1
